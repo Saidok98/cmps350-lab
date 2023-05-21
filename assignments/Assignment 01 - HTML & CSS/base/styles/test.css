@@ -1,0 +1,85 @@
+/* I added this for you so do not remove it */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+  font-size: var(0.85rem);
+  line-height: 1.8;
+  
+}
+
+
+
+
+p {
+  margin: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: gray;
+}
+
+header img {
+  height: 70px; /* Adjust this value to fit your logo */
+  border-radius: 70%; /* Make the border radius 50% to create a circle */
+}
+
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+ /* 
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: #888;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  */
+  nav a:hover {
+    color: #000;
+  }
+
+  .navbar {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }

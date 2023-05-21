@@ -1,5 +1,3 @@
-/* I added this for you so do not remove it */
-*,
 *::before,
 *::after {
   margin: 0;
@@ -10,9 +8,1182 @@ html {
   font-family: "Inter", sans-serif;
   font-size: var(0.85rem);
   line-height: 1.8;
+  
 }
+
+
+
 
 p {
   margin: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: gray;
 }
+
+@media (min-width: 1500px) {
+    .HContainer{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
+          }
+        
+        
+        .titleContainer{
+        
+            align-self: center;
+            width: 300px;
+        
+        }
+        
+        .navContainer{
+            
+            order: 1;
+        }
+        
+        a{
+        text-decoration: none;
+        color: gray;
+        padding: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        }
+        a:hover{
+        
+            color: #7995ee;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+        li {
+            display: inline;
+          }
+        
+        .student{
+            align-self: center;
+            padding: 20px;
+            margin: 20px;
+        
+        }
+        header>h1{
+            color: #3b485a;
+        }
+        header>div>p{
+            font-size: 20px;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        
+         }
+        
+        .round{
+        
+              border-radius: 50%;
+              width: 100px;
+              height: 100px;
+        }
+        .student_profile{
+        
+            border-radius: 50%;
+        
+        }
+        #contact_btn{
+          background-color: #7995ee;
+          border: 2px solid #6282eb;
+          color: white;
+          padding: 10px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 25px; 
+        
+        }
+        #contact_btn:hover{
+            background-color: gray;
+            border-color: gray ;
+        }
+        
+        #about_btn{
+          background-color: whitesmoke;
+          color: gray;
+          border: 2px solid gray;
+          padding: 10px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 25px; 
+        
+        }
+        #about_btn:hover{
+            border-color: #7995ee;
+        
+        }
+        main{
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+        
+        .card{
+         
+                object-fit: cover;
+                width: 250px;
+                height: 250px;
+                padding: 15px 5px 5px 15px;
+                
+             
+        }
+        .gactivity1{
+            display: flex;
+            margin-left: 450px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .activity1{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity1:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .activity2{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity2:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .activity3{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity3:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .activity4{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity4:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }        
+        .card_pic {
+             grid-row: 1/6;
+             grid-column: 1/2;
+             
+             }
+        .btn { 
+            grid-row: 1/2;
+            grid-column: 2/4;   
+            padding-top: 20px;
+            padding-bottom: 10px;
+        
+        }
+        .card_title { 
+            grid-row: 2/3;
+            grid-column: 2/5;
+            padding-left: 15px;
+            padding-bottom: 15px;
+         }
+        .card_txt {
+            grid-row: 3/4;
+            grid-column: 2/5;
+            text-overflow: ellipsis;
+        
+            }
+        .card_txt>p{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3; /* Number of lines to display */
+        
+        }
+        .qucc {   
+            grid-row: 4/5;
+            grid-column: 3/5;
+        }
+        .qucc>p{
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .qucc>p:hover{
+            color: #7995ee;
+        }
+        .date {    
+            grid-row: 5/6;
+            grid-column: 3/5;}
+        
+        .mini_logo{
+            grid-row: 4/6;
+            grid-column: 2/3;
+            padding-left: 10px;
+        
+        }
+        .miniLogo{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        
+        }
+        #card_btn{
+            background-color: whitesmoke;
+            color: gray;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px; 
+        }
+        .btn>button:hover{
+            background-color: black;
+            border-color: black ;
+        }
+        .gactivity2{
+            display:flex;
+            flex-direction: column;       
+        }
+        .tagcontainter{
+            margin-right: 400px;
+            display: flex;
+            width: 250px;
+            height: 200px;
+            background-color: white;
+            flex-wrap: wrap;
+            justify-content: first baseline;
+            overflow-wrap: normal;
+        }
+        .tagcontainter>div>p{
+            background-color: lightgray;
+            color: #3b485a;
+            border-radius: 5px;
+        }
+        .letstalkcontainter{
+            display: flex;
+            background-color: white;
+            width: 250px;
+            height: 250px;
+            flex-direction: column;
+        }   
+        .socialicons{
+            display: flex;
+        }  
+        .socialicons>img{
+            margin-left: 10px;
+            width:35px;
+            height: 35px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: lightgray;
+        } 
+        .socialicons>img:hover{
+            background-color: #6282eb;
+        }  
+
+        .newsletContainer{
+            display: flex;
+            width: 250px;
+            height: 200px;
+            flex-direction: column;            
+            background-color: white;
+        }
+        .ffemail{
+            background-color: lightgray;
+            color: gray;
+            padding: 5px;
+            border-color: gray;
+            margin-left:30px;
+            margin-bottom: 15px;
+
+        }
+        .sbt{
+            background-color:#6282eb;
+            color: white;
+            border: none;
+            text-align: center;
+            padding:5px;
+            margin-left: 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px; 
+
+        }
+        .loadMore{
+            margin-left:40%;
+            margin-bottom: 20px;
+        }
+        .loadMore>button{
+            background-color: gray;
+            color: white;
+            border: 2px solid gray;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px; 
+        }
+        .loadMore>button:hover{
+            background-color: #6282eb;
+        }
+
+        .qllabel{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .comm{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .fcontainer{
+            display: flex;
+
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 400px;
+            margin-left: 400px;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+        .fspan{
+            color:#6282eb
+        }
+        #CopyRight{
+            margin-left: 45%;
+        }
+
+  }
+
+  @media (max-width: 768px) {
+
+    .HContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        flex-direction: column;
+          }
+        
+        
+        .titleContainer{
+        
+            align-self: center;
+            width: 300px;
+        
+        }
+        .logo-container{
+            justify-content: center;
+            align-self: center;
+        }
+        .navContainer{
+            
+            align-self: center;
+        }
+        
+        a{
+        text-decoration: none;
+        color: gray;
+        padding: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        }
+        a:hover{
+        
+            color: #7995ee;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+        li {
+            display: inline;
+          }
+        
+        .student{
+            display: none;
+        
+        }
+        header>h1{
+            color: #3b485a;
+        }
+        header>div>p{
+            font-size: 20px;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        
+         }
+        
+        .round{
+        
+              border-radius: 50%;
+              width: 100px;
+              height: 100px;
+        }
+        .student_profile{
+        
+            border-radius: 50%;
+        
+        }
+        #contact_btn{
+          background-color: #7995ee;
+          border: 2px solid #6282eb;
+          color: white;
+          padding: 10px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 25px; 
+        
+        }
+        #contact_btn:hover{
+            background-color: gray;
+            border-color: gray ;
+        }
+        
+        #about_btn{
+          background-color: whitesmoke;
+          color: gray;
+          border: 2px solid gray;
+          padding: 10px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 25px; 
+        
+        }
+        #about_btn:hover{
+            border-color: #7995ee;
+        
+        }
+        main{
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+        
+        .card{
+         
+                object-fit: cover;
+                width: 250px;
+                height: 250px;
+                padding: 15px 5px 5px 15px;
+                
+             
+        }
+        .gactivity1{
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .activity1{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity1:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .activity2{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity2:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .activity3{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity3:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .activity4{
+            display: grid;
+            grid-template-columns: 250px 200px 50px 150px;
+            grid-template-rows: 20px 20px 100px 50px 50px;
+        
+            background-color: white;
+            column-gap: 15px;
+            row-gap: 15px;
+            align-items: center;
+           
+            column-gap: 15px;
+        }
+        .activity4:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .card_pic {
+             grid-row: 1/6;
+             grid-column: 1/2;
+             
+             }
+        .btn { 
+            grid-row: 1/2;
+            grid-column: 2/4;   
+            padding-top: 20px;
+            padding-bottom: 10px;
+        
+        }
+        .card_title { 
+            grid-row: 2/3;
+            grid-column: 2/5;
+            padding-left: 15px;
+            padding-bottom: 15px;
+         }
+        .card_txt {
+            grid-row: 3/4;
+            grid-column: 2/5;
+            text-overflow: ellipsis;
+        
+            }
+        .card_txt>p{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3; /* Number of lines to display */
+        
+        }
+        .qucc {   
+            grid-row: 4/5;
+            grid-column: 3/5;
+        }
+        .qucc>p{
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .qucc>p:hover{
+            color: #7995ee;
+        }
+        .date {    
+            grid-row: 5/6;
+            grid-column: 3/5;}
+        
+        .mini_logo{
+            grid-row: 4/6;
+            grid-column: 2/3;
+            padding-left: 10px;
+        
+        }
+        .miniLogo{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        
+        }
+        #card_btn{
+            background-color: whitesmoke;
+            color: gray;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px; 
+        }
+        .btn>button:hover{
+            background-color: black;
+            border-color: black ;
+        }
+        .gactivity2{
+            display:flex;
+            flex-direction: column;    
+            display: :none;   
+        }
+        .tagcontainter{
+            margin-right: 400px;
+            display: flex;
+            width: 250px;
+            height: 200px;
+            background-color: white;
+            flex-wrap: wrap;
+            justify-content: first baseline;
+            overflow-wrap: normal;
+        }
+        .tagcontainter>div>p{
+            background-color: lightgray;
+            color: #3b485a;
+            border-radius: 5px;
+        }
+        .letstalkcontainter{
+            display: flex;
+            background-color: white;
+            width: 250px;
+            height: 250px;
+            flex-direction: column;
+        }   
+        .socialicons{
+            display: flex;
+        }  
+        .socialicons>img{
+            margin-left: 10px;
+            width:35px;
+            height: 35px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: lightgray;
+        } 
+        .socialicons>img:hover{
+            background-color: #6282eb;
+        }  
+
+        .newsletContainer{
+            display: flex;
+            width: 250px;
+            height: 200px;
+            flex-direction: column;            
+            background-color: white;
+        }
+        .ffemail{
+            background-color: lightgray;
+            color: gray;
+            padding: 5px;
+            border-color: gray;
+            margin-left:30px;
+            margin-bottom: 15px;
+
+        }
+        .sbt{
+            background-color:#6282eb;
+            color: white;
+            border: none;
+            text-align: center;
+            padding:5px;
+            margin-left: 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px; 
+
+        }
+        .loadMore{
+            margin-left:40%;
+            margin-bottom: 20px;
+        }
+        .loadMore>button{
+            background-color: gray;
+            color: white;
+            border: 2px solid gray;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px; 
+        }
+        .loadMore>button:hover{
+            background-color: #6282eb;
+        }
+
+        .qllabel{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .comm{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .fcontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: left;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+        .fspan{
+            color:#6282eb
+        }
+        #CopyRight{
+            margin-left: 45%;
+        }
+  }
+
+    @media (max-width: 1500px) and (min-width: 720px) {
+        .HContainer{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            flex-direction: column;
+              }
+            
+            
+            .titleContainer{
+            
+                align-self: center;
+                width: 300px;
+            
+            }
+            
+            .navContainer{
+                
+                order:1;
+
+            }
+            
+            a{
+            text-decoration: none;
+            color: gray;
+            padding: 5px;
+            font-size: 22px;
+            font-weight: bold;
+            }
+            a:hover{
+            
+                color: #7995ee;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+              }
+            li {
+                display: inline;
+              }
+            
+            .student{
+                display: none;
+            
+            }
+            header>h1{
+                color: #3b485a;
+            }
+            header>div>p{
+                font-size: 20px;
+                color: gray;
+                font-family: Arial, Helvetica, sans-serif;
+            
+             }
+            
+            .round{
+            
+                  border-radius: 50%;
+                  width: 100px;
+                  height: 100px;
+            }
+            .student_profile{
+            
+                border-radius: 50%;
+            
+            }
+            #contact_btn{
+              background-color: #7995ee;
+              border: 2px solid #6282eb;
+              color: white;
+              padding: 10px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 25px; 
+            
+            }
+            #contact_btn:hover{
+                background-color: gray;
+                border-color: gray ;
+            }
+            
+            #about_btn{
+              background-color: whitesmoke;
+              color: gray;
+              border: 2px solid gray;
+              padding: 10px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 25px; 
+            
+            }
+            #about_btn:hover{
+                border-color: #7995ee;
+            
+            }
+            main{
+                background-color: whitesmoke;
+                display: flex;
+                justify-content: space-between;
+                
+    
+            }
+            
+            .card{
+             
+                    object-fit: cover;
+                    width: 250px;
+                    height: 250px;
+                    padding: 15px 5px 5px 15px;
+                    
+                 
+            }
+            .gactivity1{
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .activity1{
+                display: grid;
+                grid-template-columns: 250px 200px 50px 150px;
+                grid-template-rows: 20px 20px 100px 50px 50px;
+            
+                background-color: white;
+                column-gap: 15px;
+                row-gap: 15px;
+                align-items: center;
+               
+                column-gap: 15px;
+            }
+            .activity1:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .activity2{
+                display: grid;
+                grid-template-columns: 250px 200px 50px 150px;
+                grid-template-rows: 20px 20px 100px 50px 50px;
+            
+                background-color: white;
+                column-gap: 15px;
+                row-gap: 15px;
+                align-items: center;
+               
+                column-gap: 15px;
+            }
+            .activity2:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .activity3{
+                display: grid;
+                grid-template-columns: 250px 200px 50px 150px;
+                grid-template-rows: 20px 20px 100px 50px 50px;
+            
+                background-color: white;
+                column-gap: 15px;
+                row-gap: 15px;
+                align-items: center;
+               
+                column-gap: 15px;
+            }
+            .activity3:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .activity4{
+                display: grid;
+                grid-template-columns: 250px 200px 50px 150px;
+                grid-template-rows: 20px 20px 100px 50px 50px;
+            
+                background-color: white;
+                column-gap: 15px;
+                row-gap: 15px;
+                align-items: center;
+               
+                column-gap: 15px;
+            }
+            .activity4:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            
+            .card_pic {
+                 grid-row: 1/6;
+                 grid-column: 1/2;
+                 
+                 }
+            .btn { 
+                grid-row: 1/2;
+                grid-column: 2/4;   
+                padding-top: 20px;
+                padding-bottom: 10px;
+            
+            }
+            .card_title { 
+                grid-row: 2/3;
+                grid-column: 2/5;
+                padding-left: 15px;
+                padding-bottom: 15px;
+             }
+            .card_txt {
+                grid-row: 3/4;
+                grid-column: 2/5;
+                text-overflow: ellipsis;
+            
+                }
+            .card_txt>p{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 3; /* Number of lines to display */
+            
+            }
+            .qucc {   
+                grid-row: 4/5;
+                grid-column: 3/5;
+            }
+            .qucc>p{
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .qucc>p:hover{
+                color: #7995ee;
+            }
+            .date {    
+                grid-row: 5/6;
+                grid-column: 3/5;}
+            
+            .mini_logo{
+                grid-row: 4/6;
+                grid-column: 2/3;
+                padding-left: 10px;
+            
+            }
+            .miniLogo{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            
+            }
+            #card_btn{
+                background-color: whitesmoke;
+                color: gray;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 15px; 
+            }
+            .btn>button:hover{
+                background-color: black;
+                border-color: black ;
+            }
+            .gactivity2{
+                display:flex;
+                flex-direction: column;    
+                display: none;   
+            }
+            .tagcontainter{
+                margin-right: 400px;
+                display: flex;
+                width: 250px;
+                height: 200px;
+                background-color: white;
+                flex-wrap: wrap;
+                justify-content: first baseline;
+                overflow-wrap: normal;
+            }
+            .tagcontainter>div>p{
+                background-color: lightgray;
+                color: #3b485a;
+                border-radius: 5px;
+            }
+            .letstalkcontainter{
+                display: flex;
+                background-color: white;
+                width: 250px;
+                height: 250px;
+                flex-direction: column;
+            }   
+            .socialicons{
+                display: flex;
+            }  
+            .socialicons>img{
+                margin-left: 10px;
+                width:35px;
+                height: 35px;
+                padding: 10px;
+                border-radius: 50%;
+                background-color: lightgray;
+            } 
+            .socialicons>img:hover{
+                background-color: #6282eb;
+            }  
+    
+            .newsletContainer{
+                display: flex;
+                width: 250px;
+                height: 200px;
+                flex-direction: column;            
+                background-color: white;
+            }
+            .ffemail{
+                background-color: lightgray;
+                color: gray;
+                padding: 5px;
+                border-color: gray;
+                margin-left:30px;
+                margin-bottom: 15px;
+    
+            }
+            .sbt{
+                background-color:#6282eb;
+                color: white;
+                border: none;
+                text-align: center;
+                padding:5px;
+                margin-left: 30px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 15px; 
+    
+            }
+            .loadMore{
+                margin-left:40%;
+                margin-bottom: 20px;
+            }
+            .loadMore>button{
+                background-color: gray;
+                color: white;
+                border: 2px solid gray;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 25px; 
+            }
+            .loadMore>button:hover{
+                background-color: #6282eb;
+            }
+    
+            .qllabel{
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .comm{
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+            }
+    
+            .fcontainer{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                justify-content: left;
+                text-align: center;
+                padding-top: 20px;
+    
+            }
+            .fspan{
+                color:#6282eb
+            }
+            #CopyRight{
+                margin-left: 45%;
+            }
+  }
+
+
+
+
+
+  
